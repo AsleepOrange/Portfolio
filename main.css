@@ -1,0 +1,166 @@
+button.select-button {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+button.right {
+    right: 5px;
+}
+
+button.left {
+    left: 5px;
+}
+
+div.center {
+    vertical-align: center;
+}
+
+html {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+.img-button {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.img-button:hover {
+    margin: 0 0 0 0;
+    border: 0 0 0 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.img-button::selection {
+    margin: 0 0 0 0;
+    border: 0 0 0 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.img-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.img-button:hover img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.background-img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: inset 0 0 500px #000;
+    aspect-ratio: 2;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    z-index: -1000;
+}
+
+div.slideshow-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    border: 0 0 0 0;
+}
+
+div.slideshow-information {
+    background-image: linear-gradient(60deg, #15152055, #20202555);
+    height: 100%;
+    width: 500px;
+    margin: 0 0 0 0;
+    border: 0 0 0 0;
+    position: absolute;
+    right: 0%;
+
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+
+    justify-content: right;
+}
+
+div.slideshow-information > * {
+    justify-content: right;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    z-index: 10000000;
+    position: relative;
+}
+
+div.slideshow-information h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+
+div.slideshow-information.bottom-information {
+    bottom: 40px;
+    position: absolute;
+}
+
+div.slideshow-information p,span {
+    color: #cccccc;
+}
+
+/* marquee */
+.wrapper {
+    z-index: 10000000;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+}
+.marquee {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: #eeffff77;
+    z-index: 10000000;
+    user-select: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+}
+.marquee-top {
+    top: 10px;
+}
+.marquee-bottom {
+    bottom: -10px;
+}
+.marquee-reverse {
+    left: -200px;
+}
